@@ -9,10 +9,10 @@ public class ArrayString {
         displayArr(S);
         System.out.println("");
         
-//        Scanner sn = new Scanner(System.in);
-//        System.out.print("Input searching keyword: ");
-//        String kw = sn.nextLine();
-//        findName(S, kw);
+        Scanner sn = new Scanner(System.in);
+        System.out.print("Input searching keyword: ");
+        String kw = sn.nextLine();
+        findName(S, kw);
         System.out.println("-----After sorting------");
         sortString(S);
         displayArr(S);
