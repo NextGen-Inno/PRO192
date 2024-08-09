@@ -1,0 +1,6 @@
+Create a project in Java. Create a Main.java class that contains the main() method. Write a program to input a positive integer n as
+the number of elements of the array from the keyboard. Input n elements of the array, which are integers, from the keyboard. Create methods to:
+List the even numbers in ascending order on line 1. 
+List the odd numbers in descending order on line 2.
+Submit your solution here by following format: Ex3_StudentID.zip
+Ex: Ex3_He190001.zip
