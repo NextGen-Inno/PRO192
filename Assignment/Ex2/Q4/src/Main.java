@@ -17,35 +17,34 @@ public class Main {
         int n = sc.nextInt();
         int[] a = new int[n];
         System.out.print("Enter " + n + " integer elements: ");
-        inputArray(a);
-        int sMin = findSMin(a);
-        if (sMin == Integer.MAX_VALUE) {
-            System.out.println("There is no second smallest element.");
+        inputArray(a, sc);
+        int sMax = findSMax(a);
+        if (sMax == Integer.MIN_VALUE) {
+            System.out.println("There is no second largest element.");
         } else {
-            System.out.println("The second smallest element is: " + sMin);
+            System.out.println("The second largest element is: " + sMax);
         }
     }
 
-    public static void inputArray(int[] a) {
-        Scanner sc = new Scanner(System.in);
+    public static void inputArray(int[] a, Scanner sc) {
         for (int i = 0; i < a.length; i++) {
             a[i] = sc.nextInt();
         }
     }
 
-    public static int findSMin(int[] a) {
-        int min = a[0];
-        int sMin = Integer.MAX_VALUE;
+    public static int findSMax(int[] a) {
+        int max = Integer.MIN_VALUE;
+        int sMax = Integer.MIN_VALUE;
 
-        for (int i = 1; i < a.length; i++) {
-            if (a[i] < min) {
-                sMin = min;
-                min = a[i];
-            } else if (a[i] < sMin && a[i] > min) {
-                sMin = a[i];
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] > max) {
+                sMax = max;
+                max = a[i];
+            } else if (a[i] > sMax && a[i] < max) {
+                sMax = a[i];
             }
         }
 
-        return sMin;
+        return sMax;
     }
 }

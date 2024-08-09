@@ -10,15 +10,17 @@ import java.util.Scanner;
  *
  * @author DUKE
  */
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
         Scanner sn = new Scanner(System.in);
 
-
-        System.out.print("Enter a positive integer number m for the first m prime numbers: ");
+        System.out.print("Enter a positive integer number n: ");
         int n = sn.nextInt();
         System.out.print("The first " + n + " prime numbers are: ");
+        
         listFirstNPrimes(n);
     }
 
@@ -26,7 +28,7 @@ public class Main {
         int count = 0;
         int num = 2;
         while (count < n) {
-            if (isPrime(num)) {
+            if (PrimeLib.isPrime(num)) {
                 System.out.print(num + " ");
                 count++;
             }
@@ -35,8 +37,14 @@ public class Main {
         System.out.println("");
     }
 
-    private static boolean isPrime(int num) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public static class PrimeLib {
+        public static boolean isPrime(int n) {
+            if (n <= 1) return false;
+            for (int i = 2; i * i <= n; i++) {
+                if (n % i == 0) return false;
+            }
+            return true;
+        }
     }
 }
 

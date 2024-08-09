@@ -16,20 +16,36 @@ public class Main {
         System.out.print("Enter a positive integer number n: ");
         int n = sc.nextInt();
         int[] a = new int[n];
-        System.out.print("Enter " + n + " interger elements: ");
+        System.out.print("Enter " + n + " integer elements: ");
         inputArray(a);
-        int sMax = findSMax(a);
-        if (sMax == Integer.MIN_VALUE) {
-            System.out.println("There is no second largest elements.");
+        int sMin = findSMin(a);
+        if (sMin == Integer.MAX_VALUE) {
+            System.out.println("There is no second smallest element.");
         } else {
-            System.out.println("The second largest element is: " + sMax);
+            System.out.println("The second smallest element is: " + sMin);
         }
     }
 
     public static void inputArray(int[] a) {
-        Scanner sn = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         for (int i = 0; i < a.length; i++) {
-            a[i] = sn.nextInt();
+            a[i] = sc.nextInt();
         }
+    }
+
+    public static int findSMin(int[] a) {
+        int min = a[0];
+        int sMin = Integer.MAX_VALUE;
+
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] < min) {
+                sMin = min;
+                min = a[i];
+            } else if (a[i] < sMin && a[i] > min) {
+                sMin = a[i];
+            }
+        }
+
+        return sMin;
     }
 }
