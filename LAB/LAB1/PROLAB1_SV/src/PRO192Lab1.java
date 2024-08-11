@@ -29,10 +29,10 @@ public class PRO192Lab1 {
         int product = a * b;
         double quotient = (double) a / b;
 
-        System.out.print(a + "+" + b + " = " + sum + "; ");
-        System.out.print(a + "-" + b + " = " + difference + "; ");
-        System.out.print(a + "*" + b + " = " + product + "; ");
-        System.out.print(a + "/" + b + " = " + quotient);
+        System.out.println(a + " + " + b + " = " + sum);
+        System.out.println(a + " - " + b + " = " + difference);
+        System.out.println(a + " * " + b + " = " + product);
+        System.out.println(a + " / " + b + " = " + quotient);
     }
 
     public void f3_SumOfN(int n) {
