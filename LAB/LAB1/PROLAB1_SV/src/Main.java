@@ -13,7 +13,9 @@ public class Main {
         PRO192Lab1 lab = new PRO192Lab1();
         lab.f1_CheckOddEven(0);
         lab.f2_Lab1Math(10, 3);  
-        lab.f3_SumOfN(0);
-
+        lab.f3_SumOfN(10);
+        lab.f7_ListFiboToN(20);
+        lab.f8_ListTheFirstNFibo(10);
+        lab.f9_NumberToWord(6);
     }
 }
