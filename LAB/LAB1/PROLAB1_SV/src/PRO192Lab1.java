@@ -3,8 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-import java.util.Scanner;
-
 /**
  *
  * @author DUKE
@@ -18,9 +16,9 @@ public class PRO192Lab1 {
 
     public void f1_CheckOddEven(int n) {
         if (n % 2 == 0) {
-            System.out.println(n + "Even");
+            System.out.println("Even");
         } else {
-            System.out.println(n + "Odd");
+            System.out.println("Odd");
         }
 
     }
@@ -34,7 +32,7 @@ public class PRO192Lab1 {
         System.out.println(a + " + " + b + " = " + sum);
         System.out.println(a + " - " + b + " = " + difference);
         System.out.println(a + " * " + b + " = " + product);
-        System.out.println(a + " / " + b + " = " + quotient);
+        System.out.printf(a + " / " + b + " = %.2f%n", quotient);
     }
 
     public void f3_SumOfN(int n) {
@@ -83,7 +81,7 @@ public class PRO192Lab1 {
     }
 
     public void f5_ListPrimeToN(int n) {
-        System.out.println("List prime number from 2 to "+n+": ");
+        System.out.println("List prime number from 2 to " + n + ": ");
         for (int i = 2; i <= n; i++) {
             if (isPrime(i)) {
                 System.out.print(i + " ");
@@ -93,7 +91,7 @@ public class PRO192Lab1 {
     }
 
     public void f6_ListTheFirstNPrimeNumbers(int n) {
-        System.out.println("The first "+n+" prime numbers:");
+        System.out.println("The first " + n + " prime numbers:");
         int count = 0, number = 2;
         while (count < n) {
             if (isPrime(number)) {
@@ -171,7 +169,8 @@ public class PRO192Lab1 {
     }
 
     public void f10_CombineTwoString(String s1, String s2) {
-        
+        String s2UpperCase = s2.toUpperCase();
+        System.out.println(s1 + " " + s2UpperCase);
     }
 
 }
