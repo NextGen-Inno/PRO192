@@ -12,6 +12,8 @@ import java.util.Scanner;
 public class PRO192Lab1 {
 
     public void f0_MyInfor() {
+        System.out.println("My student ID: HE180274");
+        System.out.println("My name is: Nguyen Minh Duc");
     }
 
     public void f1_CheckOddEven(int n) {
@@ -53,8 +55,8 @@ public class PRO192Lab1 {
             s5 += i;
         }
 
-        System.out.println("Sum of odd natural numbers not greater than or equal to" + n + "\nS1 = " + s1);
-        System.out.println("Sum of even natural numbers not greater than or equal to" + n + "\nS2 = " + s2);
+        System.out.println("Sum of odd natural numbers not greater than or equal to " + n + "\nS1 = " + s1);
+        System.out.println("Sum of even natural numbers not greater than or equal to " + n + "\nS2 = " + s2);
         System.out.println("Sum of natural numbers not greater than " + n + ", divisible by 3\nS3 = " + s3);
         System.out.println("Sum of natural numbers not greater than " + n + ", not divisible by 3\nS4 =" + s4);
         System.out.println("Sum of natural numbers not greater than " + n + "\nS5 =" + s5);
@@ -81,7 +83,7 @@ public class PRO192Lab1 {
     }
 
     public void f5_ListPrimeToN(int n) {
-        System.out.print("Prime numbers up to " + n + ": ");
+        System.out.println("List prime number from 2 to "+n+": ");
         for (int i = 2; i <= n; i++) {
             if (isPrime(i)) {
                 System.out.print(i + " ");
@@ -91,7 +93,7 @@ public class PRO192Lab1 {
     }
 
     public void f6_ListTheFirstNPrimeNumbers(int n) {
-        System.out.print("First " + n + " prime numbers: ");
+        System.out.println("The first "+n+" prime numbers:");
         int count = 0, number = 2;
         while (count < n) {
             if (isPrime(number)) {
@@ -105,7 +107,7 @@ public class PRO192Lab1 {
 
     public void f7_ListFiboToN(int n) {
         int a = 0, b = 1;
-        System.out.print("Fibonacci numbers up to " + n + ": ");
+        System.out.println("The Fibonacci numbers from 1 to " + n + " are: ");
 
         while (a <= n) {
             if (a > 0) {
@@ -120,8 +122,6 @@ public class PRO192Lab1 {
 
     public void f8_ListTheFirstNFibo(int n) {
         int a = 0, b = 1;
-        System.out.print("First " + n + " Fibonacci numbers: ");
-
         for (int i = 0; i <= n; i++) {
             System.out.print((i == 0 ? 1 : a) + " ");
             int temp = a + b;
@@ -131,7 +131,7 @@ public class PRO192Lab1 {
         System.out.println();
     }
 
-    public static void f9_NumberToWord(int n) {
+    public void f9_NumberToWord(int n) {
         String result;
         switch (n) {
             case 0:
@@ -168,6 +168,10 @@ public class PRO192Lab1 {
                 result = "The number is out of the range of 0 to 9.";
         }
         System.out.println(result);
+    }
+
+    public void f10_CombineTwoString(String s1, String s2) {
+        
     }
 
 }
