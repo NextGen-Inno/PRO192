@@ -1,2 +1,2 @@
-jdk-8u181-windows-x64
-Apache-NetBeans-17-bin-windows-x64_4
+jdk-8u181 - https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
+Apache-NetBeans-17-bin - https://netbeans.apache.org/front/main/download/nb17/
