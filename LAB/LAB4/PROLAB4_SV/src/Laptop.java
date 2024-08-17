@@ -7,6 +7,8 @@ public class Laptop extends ElectronicProduct {
 
     public Laptop(String name, double price, String brand, int warrantyMonths, int hardDriveCapacity, double cpuSpeed) {
         super(name, price, brand, warrantyMonths);
+        this.cpuSpeed = cpuSpeed;
+        this.hardDriveCapacity = hardDriveCapacity;
     }
     
     private double cpuSpeed;
@@ -32,7 +34,12 @@ public class Laptop extends ElectronicProduct {
 		
     }
     public void f3_checkCpuSpeed() {
-	//YOUR CODE HERE
+	if(cpuSpeed>=2.5){
+            System.out.println("High speed");
+        }
+        else {
+            System.out.println("Low speed");
+        }
 	
     }
      

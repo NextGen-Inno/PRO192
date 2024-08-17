@@ -50,5 +50,9 @@ public class ElectronicProduct extends Product {
     public int getWarrantyMonths() {
         return warrantyMonths;
     }
+
+    String gethardDriveCapacity() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
