@@ -1,0 +1,7 @@
+Product1, 150000
+Alpha, 45000
+Beta, 30000
+Gamma, 120000
+Delta, 90000
+Omega, 50000
+Theta, 110000

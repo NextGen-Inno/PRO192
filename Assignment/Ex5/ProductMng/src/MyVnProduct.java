@@ -46,7 +46,7 @@ public class MyVnProduct implements VNProduct {
     @Override
     public void f4(List<Product> p) {
         p.sort(Comparator.comparing(Product::getName));
-        for (int i = 1; i < 6 && i < p.size(); i++) {
+        for (int i = 0; i < 4 && i < p.size(); i++) {
             System.out.println(p.get(i));
         }
     }
