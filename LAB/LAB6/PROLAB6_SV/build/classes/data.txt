@@ -1,0 +1,11 @@
+HE12;nguyen van a;19;9.0
+HE13; pham van b;19;4.5
+HE14; tran van quan; 25;8.5 
+HE15; phan mai c; 19;9.5
+HE16; quach tuan ngoc;26;5
+HE17; nguyen thai tuan; 19;9.5
+HE18; duong anh nga; 18;9
+HE19; nguyen thi ngoc; 25;8
+HE20; nguyen duc binh; 20;8
+HE21; bui van t; 26;4.9
+HE22; dam vinh hung; 28;4.2
