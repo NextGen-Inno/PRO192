@@ -1,0 +1,4 @@
+He190001; 	vu van huy;	18;	9.5
+He190006; 	bui van tan;	18;	8.7
+He190011; 	nguyen hong an;	18;	4.5
+He190010; 	vu minh tuan;	18;	8.0
